@@ -15,7 +15,7 @@ create table CLIENTS(
     neighborhood  varchar(45),
     city  varchar(15),
     state  varchar(15),
-    zip_code  char(7),
+    zip_code  char(8),
     primary key (id_client),
     constraint unique_doc_client unique(doc)
 );
@@ -73,11 +73,10 @@ create table SELLER(
 	id_seller int not null auto_increment,
 	social_name varchar(255) not null,
 	abst_name varchar(255) not null,
-	CNPJ char(15),
-	CPF char(11),
+	doc char(15),
 	location char(11)  not null,
 	primary key (id_seller),
-	constraint unique_seller_CNPJ unique(CNPJ), constraint unique_seller_CPF unique(CPF)
+	constraint unique_seller_doc unique(doc)
 	);
     
 -- tabela Estoque

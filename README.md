@@ -8,15 +8,24 @@ Este modelo é baseado no desafio proposto no bootcamp de Inteligênci
  - Produto
  - Fornecedor
  - Vendedor
+ - Entrega
+  
 
-  ### Desafio proposto:
-- Recuperações simples com SELECT Statement
-- Filtros com WHERE Statement
-- Crie expressões para gerar atributos derivados
-- Defina ordenações dos dados com ORDER BY
-- Condições de filtros aos grupos – HAVING Statement
-- Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados
-- Quantos pedidos foram feitos por cada cliente?
-- Algum vendedor também é fornecedor?
-- Relação de produtos fornecedores e estoques;
-- Relação de nomes dos fornecedores e nomes dos produtos;
+  ### Desafio
+- SELECT Statement simples.
+- Filtros com WHERE Statement.
+- Expressão com atributo derivado.
+- Expressão com ORDER BY.
+- Expressão com Group By e HAVING Statement.
+- Expressão com Select Statement mais complexo.
+- Quantidade de pedidos feitos por clientes.
+- Verifica se um vendedor é fornecedor.
+- Listagem de todos os vendedore separando o cocumento pelo tipo.
+- Relação de produtos fornecedores e estoques.
+- Relação de nomes dos fornecedores e nomes dos produtos.
+- Busca informações de entrega de pedido pela numero do documento de indentificação ou pelo codigo de rastreio.
+
+### Refinamentos
+- Cliente PJ e PF – Uma conta pode ser PJ ou PF, mas não pode ter as duas informações;
+- Pagamento – Pode ter cadastrado mais de uma forma de pagamento;
+- Entrega – Possui status e código de rastreio;
