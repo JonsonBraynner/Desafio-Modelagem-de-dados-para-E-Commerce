@@ -122,6 +122,20 @@ create table PRODUCT_SUPPLIER(
     constraint fk_id_product_product_supplier foreign key (id_product) references product(id_product) ON DELETE CASCADE
     );
 
+-- Tabela entrega
+create table delivery(
+	id_order int not null auto_increment,
+    street  varchar(45),
+    complement  varchar(45),
+    neighborhood  varchar(45),
+    city  varchar(15),
+    state  varchar(15),
+    zip_code  char(7),
+    tracking_number varchar(11),
+    status enum('em separação','em transporte','saiu para entrega','entregue'),
+    constraint fk_id_order_delivery foreign key(id_order) references orders(id_order)ON DELETE CASCADE
+);
+
 -- tabela Estoque
 create table PRODUCT_STORAGE(
 	id_p_storage int not null  auto_increment,
